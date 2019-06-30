@@ -1,0 +1,128 @@
+\documentclass[a4paper,10pt]{article}
+
+%% ------------------------------- %%
+%% Template fount at: 
+%% https://it.sharelatex.com/templates/cv-or-resume/professional-cv
+%% CV template created by Alessandro Plasmati utilizes XeLaTeX engine and Fontin font.
+%% ------------------------------- %%
+
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{titlesec}					%custom \section
+\usepackage[none]{hyphenat} 
+\usepackage[left=1.7cm,
+            top=1cm,
+            right=2.4cm,
+            bottom=1cm
+            ]{geometry}
+\usepackage{array}
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+% \addtolength{\voffset}{-1.3cm}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+\pagestyle{empty} % non-numbered pages
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge \textsc{Matteo Ponza}
+	}\bigskip\par}
+
+%--------------------SECTIONS-----------------------------------
+\begin{center}
+\begin{tabular}{rlrl}
+  \textsc{email:}     & \href{mailto:matteoponza@gmail.com}{matteoponza@gmail.com} &
+  \textsc{phone:}     & +39 340 36 75 864\\
+  \textsc{website:}   & \href{https://ponzamatteo.github.io/}{https://ponzamatteo.github.io} & \textsc{LinkedIn:} & \href{https://www.linkedin.com/in/matteo-ponza-557136135}{link}\\
+  \multicolumn{4}{c}{\textsc{address:} \quad Valdagno (Vi), 36078, Italy} \\
+\end{tabular}
+\end{center}
+
+\section{Education}
+\begin{tabular}{m{0.25\linewidth}|p{0.75\linewidth}}
+  \textsc{Sep. 2016 - Jul. 2019} &
+  Banchelor Degree in \textsc{Computer Science},
+  \textbf{University of Trento} (Italy)\\
+  & Expected final grade: 110/110 | \textsc{GPA}: 28.88/30\\
+  \multicolumn{2}{c}{} \\
+
+  \textsc{Jan. 2019 - Jun. 2019}& 
+  Exchange Semester at \textbf{Tallinn University of Technology}, (Estonia)\\& GPA: 5/5 \\
+
+  \multicolumn{2}{c}{} \\
+  \textsc{Sep. 2011 - Jul. 2016} &
+  \textbf{Technical High School Diploma at \textsc{ITI ‘V.E. Marzotto’}, (Italy)}
+\\ & Specialization in Computer Science and Telecommunications. Final Grade: 100/100
+\end{tabular}
+
+\section{Work Experience}
+\begin{tabular}{m{0.25\linewidth}|p{0.75\linewidth}}
+  \textsc{Apr. 2018 - Sep. 2018} &
+    \textbf{Software Developer at \textsc{University of Trento}, (Italy)} \\
+    \emph{R and C Programming} &
+    Extended features of R package for circular statistics (\href{https://r-forge.r-project.org/projects/circular/}{circular}). Implemented mathematical routines in R and C languages for calculating p-value for statistical hypothesis tests for circular data. With the new features the package can perform more precise calculations, allowing more meanigfull statistical interpretations.
+    \\
+  \multicolumn{2}{c}{} \\
+  \textsc{Jun. 2015 - Jun. 2015} &
+  \textbf{Web Developer at \textsc{GoSwift}, Tallinn, (Estonia)}\\
+  \emph{\textsc{Java} and Web Programming} &
+  Internship experience in the context of project Erasmus+ Forins. Trained on the usage of the \textsc{Java} framework Spng and Angular JS.
+\end{tabular}
+
+\section{Skills}
+\begin{tabular}{m{0.25\linewidth} p{0.75\linewidth}}
+\emph{Programming Languages}: & \textsc{C/C++, Java, C\#, Python, R};\\
+\emph{Web Development}:       & HTML5, CSS3, Javascript (Node.js), \textsc{PHP}, Wordpress;\\
+\emph{Software Engineering}: &\textsc{GIT} as version control system;\\
+                     &\href{https://travis-ci.com/}{Travis CI} as continuous integration tool;\\ 
+                     &\href{https://jestjs.io/en/}{Jest} as testing tool;\\
+\emph{Other Skills}:         & Database Management with \textsc{SQL};\\
+                     & Machine Learning with \textsc{Matlab} and \textsc{Phyton};\\
+\emph{Languages}:            & \emph{Italian} mother tongue, proficient in \emph{English}.\\
+
+\end{tabular}
+
+\section{Voluntary Experience}
+\begin{tabular}{m{0.25\linewidth}|p{0.75\linewidth}}
+  \textsc{Nov. 2017 - Dec. 2018} &\textbf{Sport Climbing Instructor at \textsc{ASD I Sogati}, (Italy)}\\
+  &  Recognized by Italian Federation for Sport Climbing (FASI). Collaborated to organize and carry out sport climbing courses for children and adults. Youngest instructor of the association.\\
+
+  \multicolumn{2}{c}{} \\
+
+  \textsc{Jun.~2012 - Dec.~2018} &
+  \textbf{Education Facilitator} \\
+  & Educational Facilitator in summer center and camping for children and teenagers (between 8 and 15 years old). The role involved: - plan educational activities with other facilitators; - develop plots and play roles in amateur theater scenes; - carry out educational activities with children, focusing on the different needs related to their different age.\\
+
+  \multicolumn{2}{c}{} \\
+  
+  \textsc{Sep. 2013 - Jul. 2016} &
+  \textbf{Event Mentor at \textsc{ITI “V.E. Marzotto”}, (Italy)}\\
+  & Participated in the event `Linux Day' organized yearly by high school about promotion of free software. Worked with the program Blender in order to create 3D animations, images and visual effects. Collaborated in creating augmented reality application in order to dsplay an interactive map of the event (\href{https://play.google.com/store/apps/details?id=it.itismarzotto.armaps&hl=it}{link}).\\
+  
+  \multicolumn{2}{c}{} \\
+
+  \textsc{Jan. 2016 - Jan. 2017}& \textbf{Website Developer} \\
+  & Creation of websites using Wordpress:
+  - Scientific conferences organized in hometown(\href{http://laviadellescienze.altervista.org/}{link}); - Camping for children: (\href{http://campomaglio.altervista.org/}{link})\\
+\end{tabular}
+\end{document}
