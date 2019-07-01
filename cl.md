@@ -1,0 +1,6 @@
+- Short
+- Personalize
+- time and effort to write them
+- not about u but about them
+- active rather than passive
+- 
