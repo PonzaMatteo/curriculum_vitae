@@ -1,0 +1,89 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+\usepackage[none]{hyphenat}
+\usepackage[left=0.7in,top=0.2in,right=0.7in,bottom=0.5in]{geometry}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+% Configure section titles
+\titleformat{\section}{\large\bfseries\raggedright}{}{0em}{}[\rule{\textwidth}{1pt}]
+\titlespacing{\section}{0pt}{1.5ex plus .1ex minus .2ex}{0ex plus .2ex}
+
+% Custom command for header text
+\newcommand{\headerline}[1]{\parbox[t]{\textwidth}{\raggedright #1}\vspace{0pt}}
+
+\pagestyle{empty} % Remove page numbers
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	HEADER
+%----------------------------------------------------------------------------------------
+\begin{center}
+    {\Huge \bf Ponza Matteo}\\
+    \headerline{01/09/1997 | Valdagno (VI), Italy, 36078}
+    \headerline{matteoponza@gmail.com | \href{https://www.linkedin.com/in/matteo-ponza-557136135/}{linkedin} | \href{https://github.com/PonzaMatteo}{github.com/PonzaMatteo}}
+\end{center}
+
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL SUMMARY
+%----------------------------------------------------------------------------------------
+\section*{Professional Summary}
+\noindent Practitioner of Extreme Programming methodologies including TDD, iterative and incremental design and development, pair programming, collective ownership, and simple design. Committed to technical excellence that enables business agility. 
+
+\noindent A quote that I particularly like: \textit{``Software design is an exercise in human relationships''} - Kent Beck.
+
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL EXPERIENCE
+%----------------------------------------------------------------------------------------
+\section*{Professional Experience}
+
+\noindent\textbf{StashAway - Staff Software Engineer (Part-Time)} \hfill \textit{Italy | Jan. 2025 - Present}\\
+\noindent\textit{Software Engineer (Part-Time)} \hfill \textit{Italy | Sep. 2023 - Jan. 2025}\\
+\noindent\textit{Software Engineer (Full-Time)} \hfill \textit{Singapore | Sep. 2019 - Sep. 2023}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=1pt]
+    \item Design, develop and maintain mission-critical trading platform in a fault-tolerant and distributed system.
+    \item Drive technical excellence and team growth through mentoring engineers, conducting code reviews, and leading strategic refactoring initiatives that improved system agility and reduced operational costs.
+\end{itemize}
+
+\begin{itemize}[leftmargin=*, noitemsep, topsep=1pt]
+    \item Developed automations for supporting trading and anti-money laundering (AML) workflows.
+    \item Executed large scale system migration and legacy system modernization projects.
+\end{itemize}
+
+\noindent\textbf{Trento University} - \textbf{Software Developer Internship} \hfill \textit{Italy | Apr. 2018 - Sep. 2018}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=1pt]
+    \item Extended R package for circular statistics (circular).
+    \item Implemented computational routines in R and C for statistical hypothesis testing, contributing to the CircStats package on R-Forge.
+\end{itemize}
+
+\noindent\textbf{GoSwift} - \textbf{Web Developer Intern} \hfill \textit{Estonia | Jun. 2016}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=1pt]
+    \item Internship experience using Spring Framework and Angular JS.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section*{Education}
+
+\noindent\textbf{Master's Degree in Software Engineering} \hfill \textit{Jul. 2023 - Oct. 2025}
+\\ Free University of Bozen-Bolzano. Final Grade: 110 cum laude/110.
+\\ Thesis: \textit{An Evaluation of Vector Database Systems for RAG Application.}
+\\
+
+\noindent\textbf{Bachelor's Degree in Computer Science} \hfill \textit{2016 - Jul. 2019}
+\\ University of Trento. Final Grade: 110 cum laude/110.
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL SKILLS
+%----------------------------------------------------------------------------------------
+\section*{Technical Skills}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=1pt, parsep=0pt]
+    \item \textbf{Programming Languages:} Kotlin, Go.
+    \item \textbf{Technologies \& Tools:} Kafka, PostgreSQL, Temporal, GIT.
+\end{itemize}
+
+\end{document}
